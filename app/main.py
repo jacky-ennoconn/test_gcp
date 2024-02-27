@@ -9,7 +9,7 @@ app = FastAPI(
 )
 
 # Load the pre-trained XGBoost model
-model = joblib.load("C:/Users/Kairos/PycharmProjects/package/test_package/xgboost_model.pkl")
+model = joblib.load("C:\Users\Kairos\PycharmProjects\package\test_package\xgboost_model.pkl")
 
 @app.middleware("http")
 async def add_process_time_header(request: Request, call_next):
